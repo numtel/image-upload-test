@@ -1,0 +1,26 @@
+<head>
+  <title>image-upload-test</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+  {{> imageView }}
+</body>
+
+<template name="hello">
+  <input type="file" id="imageLoader" name="imageLoader"/>
+  <div id="darkroom"></div>
+  <button id="saveimage">Upload Image</button>
+</template>
+
+<template name="imageView">
+  <div class="imageView">
+    {{#each images}}
+      <div>
+        <a href="{{url}}" target="_blank"><img src="{{url store='thumbs'}}" alt="" class="thumbnail" /></a>
+      </div>
+    {{/each}}
+  </div>
+</template>
