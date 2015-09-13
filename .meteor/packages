@@ -10,4 +10,4 @@ insecure
 cfs:gridfs
 cfs:standard-packages
 cfs:graphicsmagick
-numtel:phantomjs-persistent-server
+numtel:cfs-image-resize
